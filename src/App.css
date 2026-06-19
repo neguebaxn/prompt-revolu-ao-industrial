@@ -1,0 +1,495 @@
+main {
+  min-height: 100vh;
+}
+
+.hero {
+  min-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  background:
+    linear-gradient(rgba(18, 25, 38, 0.76), rgba(18, 25, 38, 0.86)),
+    url('https://images.unsplash.com/photo-1578925518470-4def7a0f08bb?auto=format&fit=crop&w=1800&q=80');
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.topbar {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 22px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.brand,
+.nav-links a,
+.button {
+  color: inherit;
+  text-decoration: none;
+}
+
+.brand {
+  font-weight: 800;
+  font-size: 0.98rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 0.92rem;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+.hero-content {
+  width: min(1180px, calc(100% - 32px));
+  margin: auto;
+  padding: 56px 0 84px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) 360px;
+  align-items: end;
+  gap: 48px;
+}
+
+.hero-copy {
+  max-width: 760px;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: #b41f2a;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.hero .eyebrow {
+  color: #f1c44f;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  max-width: 840px;
+  margin-bottom: 22px;
+  color: #ffffff;
+  font-size: clamp(2.65rem, 7vw, 5.85rem);
+  line-height: 0.94;
+  letter-spacing: 0;
+}
+
+h2 {
+  max-width: 780px;
+  margin-bottom: 14px;
+  color: #152033;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1.02;
+  letter-spacing: 0;
+}
+
+h3 {
+  color: #162033;
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+.lead {
+  max-width: 650px;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 1.15rem;
+}
+
+.hero-actions {
+  margin-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.button {
+  min-height: 44px;
+  padding: 0 18px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+}
+
+.button.primary {
+  background: #f1c44f;
+  color: #182033;
+}
+
+.button.secondary {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #ffffff;
+}
+
+.hero-panel,
+.feature-card,
+.tech-item,
+.sprint-card,
+.team-card {
+  border: 1px solid #d9dde5;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.hero-panel {
+  padding: 26px;
+  color: #ffffff;
+  background: rgba(16, 25, 40, 0.58);
+  border-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(14px);
+}
+
+.panel-label {
+  display: block;
+  color: #f1c44f;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+
+.panel-number {
+  margin: 12px 0 4px;
+  font-size: 6rem;
+  line-height: 0.9;
+  font-weight: 900;
+}
+
+.mini-grid {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.mini-grid span {
+  padding: 10px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.12);
+  text-align: center;
+  font-weight: 800;
+}
+
+.section {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 86px 0;
+}
+
+.intro-section,
+.split,
+.team-section,
+.survival-section,
+.deploy-section {
+  display: grid;
+  grid-template-columns: 0.86fr 1.14fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.section-text {
+  max-width: 620px;
+  color: #5a6578;
+  font-size: 1.05rem;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.feature-card {
+  min-height: 86px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.feature-card span {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  background: #b41f2a;
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.feature-card p {
+  margin: 0;
+  color: #1c2638;
+  font-weight: 750;
+}
+
+.tech-list {
+  display: grid;
+  gap: 12px;
+}
+
+.tech-item {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 18px;
+}
+
+.tech-item strong {
+  color: #b41f2a;
+}
+
+.tech-item span {
+  color: #596579;
+}
+
+.timeline-section,
+.team-section {
+  border-top: 1px solid #e2e6ee;
+}
+
+.section-heading {
+  margin-bottom: 32px;
+}
+
+.history-timeline {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.timeline-item {
+  min-height: 160px;
+  padding: 18px;
+  border-left: 4px solid #1f5f8c;
+  background: #f4f7fb;
+}
+
+.timeline-item span {
+  display: block;
+  margin-bottom: 18px;
+  color: #1f5f8c;
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+.timeline-item p {
+  color: #344057;
+}
+
+.sprint-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.sprint-card {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.sprint-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.sprint-topline span {
+  color: #b41f2a;
+  font-weight: 900;
+}
+
+.sprint-topline small {
+  color: #697487;
+  text-align: right;
+}
+
+.sprint-card h3,
+.sprint-card p,
+.sprint-card ul {
+  margin-bottom: 0;
+}
+
+.sprint-card p,
+.sprint-card li {
+  color: #596579;
+}
+
+.sprint-card ul,
+.team-card ul {
+  padding-left: 18px;
+}
+
+.sprint-card strong {
+  margin-top: auto;
+  color: #152033;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.team-card {
+  padding: 24px;
+}
+
+.team-card li {
+  margin-bottom: 8px;
+  color: #596579;
+}
+
+.survival-section {
+  width: 100%;
+  max-width: none;
+  padding-inline: max(16px, calc((100% - 1180px) / 2));
+  box-sizing: border-box;
+  background: #182033;
+}
+
+.survival-section h2 {
+  color: #ffffff;
+}
+
+.survival-section .eyebrow {
+  color: #f1c44f;
+}
+
+.survival-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.survival-list p {
+  min-height: 96px;
+  margin: 0;
+  padding: 18px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.deploy-section {
+  align-items: center;
+}
+
+.deploy-section code {
+  margin: 0 4px;
+  padding: 3px 7px;
+  border-radius: 5px;
+  background: #eef2f7;
+  color: #1f5f8c;
+  font-size: 0.9rem;
+}
+
+.deploy-steps {
+  display: grid;
+  gap: 10px;
+}
+
+.deploy-steps span {
+  padding: 16px 18px;
+  border-radius: 8px;
+  background: #f4f7fb;
+  color: #243047;
+  font-weight: 800;
+}
+
+@media (max-width: 900px) {
+  .topbar,
+  .hero-content {
+    width: min(100% - 24px, 680px);
+  }
+
+  .topbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .hero-content,
+  .intro-section,
+  .split,
+  .team-section,
+  .survival-section,
+  .deploy-section {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+
+  .hero-content {
+    padding-top: 58px;
+  }
+
+  .hero-panel {
+    max-width: 420px;
+  }
+
+  .section {
+    width: min(100% - 24px, 680px);
+    padding: 58px 0;
+  }
+
+  .survival-section {
+    width: 100%;
+    padding-inline: 12px;
+  }
+
+  .sprint-grid,
+  .history-timeline {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-item {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 620px) {
+  .feature-grid,
+  .team-grid,
+  .survival-list {
+    grid-template-columns: 1fr;
+  }
+
+  .tech-item {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .button {
+    width: 100%;
+  }
+}
